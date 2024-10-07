@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-sky-50">
+
+    <div>
+        <h1 class="text-center text-5xl mt-4 mb-10 text-blue-500 font-bold font-mono">Facebook</h1>
+
+    </div>
+
+
+    <div class="flex justify-center items-center w-full h-screen">
+        <div class="p-10 shadow-xl rounded-lg w-[500px] bg-white">
+            <h2 class="text-center font-bold text-2xl">Create a new account</h2>
+            <h4 class="text-center text-slate-500 mb-10">its quick and easy</h4>
+            <hr><br>
+
+            <div class="space-x-2 flex justify-between items-center">
+                <input class="py-2 rounded border-2 px-2 w-[200px]" type="text" placeholder="First name">
+                <input class="py-2 rounded border-2 px-2 w-[200px]" type="text" placeholder="Last name">
+            </div>
+
+
+
+
+            <div class="mt-2 mb-4">
+                <h3 class="mb-2 text-lg">Date of Birth</h3>
+                <div class="space-x-1 flex justify-between items-center">
+                    <!-- Day input -->
+                    <input class="py-2 rounded border-2 px-2 w-[132px]" type="number" placeholder="DD" min="1" max="31">
+                    <!-- Month input -->
+                    <input class="py-2 rounded border-2 px-2 w-[132px]" type="number" placeholder="MM" min="1" max="12">
+                    <!-- Year input -->
+                    <input class="py-2 rounded border-2 px-2 w-[132px]" type="number" placeholder="YYYY" min="1900"
+                        max="2024">
+                </div>
+            </div>
+
+
+            <div class="mt-2 mb-4">
+                <h3 class="mb-2 text-lg">Gender</h3>
+                <div class="space-x-4 flex items-center">
+                    <!-- Male Radio Button -->
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="male" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2 text-gray-700">Male</span>
+                    </label>
+
+                    <!-- Female Radio Button -->
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2 text-gray-700">Female</span>
+                    </label>
+
+                    <!-- Other Radio Button -->
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="gender" value="other" class="form-radio h-5 w-5 text-blue-600">
+                        <span class="ml-2 text-gray-700">Other</span>
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div>
+                <input class="w-full border rounded border-2 py-3 px-2" type="email"
+                    placeholder="mobile number or email address"><br><br>
+                <input class="w-full border rounded border-2 py-3 px-2" type="password" placeholder="new password">
+
+
+                <button
+                    class="bg-green-500 hover:bg-green-600 focus:ring-2 duration-500 text-white text-xl font-bold mt-4 rounded-lg py-2.5 shadow w-full">
+                    Sign Up
+                </button>
+
+
+                <h2 class="text-center text-blue-500 mt-4">Already have an account?<a class="ml-2 hover:underline"
+                        href="login.html">log in</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
